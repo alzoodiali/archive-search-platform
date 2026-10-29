@@ -1,0 +1,64 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.pages {
+  display: flex;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav,
+.page {
+  display: grid;
+  place-items: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 var(--space-2);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-ink-700);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: all var(--dur-fast) var(--ease-out);
+}
+
+.nav:hover:not(:disabled),
+.page:hover:not(:disabled):not(.active) {
+  border-color: var(--color-primary-500);
+  color: var(--color-primary-700);
+  background: var(--color-primary-50);
+}
+
+.nav:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.active {
+  color: #fff;
+  background: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+  box-shadow: 0 4px 10px rgba(58, 110, 165, 0.3);
+}
+
+.gap {
+  display: grid;
+  place-items: center;
+  min-width: 24px;
+  color: var(--color-text-subtle);
+}
+
+@media (max-width: 480px) {
+  .nav:first-child,
+  .nav:last-child {
+    display: none;
+  }
+}

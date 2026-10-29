@@ -1,0 +1,85 @@
+/* ==========================================================
+   Design Tokens — مستوحاة من الصور المرجعية
+   (أزرق داكن للأزرار والعناوين، أزرق فولاذي لرأس الجدول، خلفية فاتحة)
+   ========================================================== */
+:root {
+  /* Brand */
+  --color-ink-900: #121c29;
+  --color-ink-800: #1c2b3e;
+  --color-ink-700: #263a52;
+  --color-ink-600: #34506f;
+
+  --color-primary-700: #2c5a8c;
+  --color-primary-600: #3a6ea5;
+  --color-primary-500: #4a82bd;
+  --color-primary-100: #e4eef9;
+  --color-primary-50: #f2f7fd;
+
+  --color-accent-500: #c9a24a; /* لمسة ذهبية خفيفة */
+
+  /* Neutrals */
+  --color-bg: #f3f5f9;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-border: #e2e7ef;
+  --color-border-strong: #cdd5e1;
+  --color-text: #1b2533;
+  --color-text-muted: #5d6b7e;
+  --color-text-subtle: #8a96a8;
+
+  /* Status */
+  --color-success-600: #14855f;
+  --color-success-50: #e8f7f0;
+  --color-danger-600: #c2410c;
+  --color-danger-700: #a3340a;
+  --color-danger-50: #fdf0ea;
+  --color-warning-600: #b7791f;
+  --color-warning-50: #fdf6e7;
+  --color-info-600: var(--color-primary-600);
+  --color-info-50: var(--color-primary-50);
+
+  /* Typography */
+  --font-sans: 'Cairo', 'Segoe UI', Tahoma, system-ui, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-md: 0.9375rem;
+  --fs-lg: 1.0625rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2.25rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(18, 28, 41, 0.06);
+  --shadow-sm: 0 2px 6px rgba(18, 28, 41, 0.06), 0 1px 2px rgba(18, 28, 41, 0.04);
+  --shadow-md: 0 8px 24px rgba(18, 28, 41, 0.08), 0 2px 6px rgba(18, 28, 41, 0.04);
+  --shadow-lg: 0 20px 48px rgba(18, 28, 41, 0.14);
+  --shadow-focus: 0 0 0 3px rgba(58, 110, 165, 0.28);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur-base: 220ms;
+  --dur-slow: 420ms;
+
+  /* Layout */
+  --container-max: 1180px;
+  --header-h: 68px;
+}

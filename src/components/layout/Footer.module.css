@@ -1,0 +1,19 @@
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.6);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding-block: var(--space-4);
+}
+
+.muted {
+  color: var(--color-text-subtle);
+}

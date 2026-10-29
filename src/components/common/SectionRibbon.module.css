@@ -1,0 +1,16 @@
+.ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0.45rem 1.1rem 0.45rem 1.9rem;
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, var(--color-ink-800), var(--color-ink-700));
+  /* سهم يشير لليسار (اتجاه القراءة في RTL) */
+  clip-path: polygon(14px 0, 100% 0, 100% 100%, 14px 100%, 0 50%);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  box-shadow: var(--shadow-sm);
+  line-height: 1.6;
+}

@@ -1,0 +1,15 @@
+.spinner {
+  display: inline-block;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2.5px solid currentColor;
+  border-inline-end-color: transparent;
+  animation: spin 0.7s linear infinite;
+}
+
+.primary { color: var(--color-primary-600); }
+.inherit { color: currentColor; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

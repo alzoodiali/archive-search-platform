@@ -1,0 +1,27 @@
+.main {
+  flex: 1;
+  padding-block: var(--space-8) var(--space-12);
+}
+
+.skip {
+  position: absolute;
+  inset-inline-start: var(--space-4);
+  top: -100px;
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  background: #fff;
+  color: var(--color-ink-800);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+
+.skip:focus {
+  top: var(--space-3);
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding-block: var(--space-5) var(--space-8);
+  }
+}

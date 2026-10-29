@@ -1,0 +1,21 @@
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  animation: fade-up var(--dur-slow) var(--ease-out) both;
+}
+
+/* الخط العلوي الرفيع كما في التصميم المرجعي */
+.card::before {
+  content: '';
+  position: absolute;
+  inset-inline: var(--space-6);
+  top: 0;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: linear-gradient(90deg, var(--color-primary-500), var(--color-ink-700));
+  opacity: 0.85;
+}
